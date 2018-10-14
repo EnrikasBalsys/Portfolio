@@ -1,0 +1,109 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Lato', 'Helvetica';
+}
+
+h1 {
+    font-family: 'Abel';
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    display: block;
+}
+
+header {
+    width: 100%;
+    z-index: 1;
+}
+
+header > a {
+    padding: 30px;
+    font-family: 'Rubik', 'Abel', 'Helvetica';
+    color: white;
+    -webkit-transition: color 0.3s ease-in;
+    -moz-transition: color 0.3s ease-in;
+    -o-transition: color 0.3s ease-in;
+    transition: color 0.3s ease-in;
+}
+
+.logo {
+    max-width: 90px;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+}
+
+#upper-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#upper-right {
+    position: absolute;
+    top: 0;
+    right: 0%;
+}
+
+.greengrad:hover {
+    color: rgba(66,230,149,1);
+    cursor: pointer;
+}
+
+#down-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#down-right {
+    bottom: 0;
+    right: 0%;
+    position: absolute;
+}
+
+#landing {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    z-index: 3;
+    opacity: 1;
+    display: block;
+    background: url(../img/Landing.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.message {
+    padding: 50vh 10% 0 20%;
+    color: white;
+    line-height: 1.5em;
+}
+
+.header, .subheader {
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+
+.heading {
+    font-size: 3.5em;
+}
+
+.subheading {
+    font-size: 1.2em;
+    font-family: 'Rubik';
+    font-weight: 300;
+}
