@@ -6,13 +6,30 @@ body {
     font-family: 'Lato', 'Helvetica';
 }
 
+h1, h2 {
+    margin-bottom: 0;
+}
+
 h1 {
-    font-family: 'Abel';
+    font-family: 'Abel', 'Helvetica';
+}
+
+h2 {
+    font-family: 'Rubik', 'Helvetica';
 }
 
 a {
     text-decoration: none;
     color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+hr {
+    max-width: 400px;
 }
 
 .content {
@@ -32,6 +49,7 @@ header > a {
     -moz-transition: color 0.3s ease-in;
     -o-transition: color 0.3s ease-in;
     transition: color 0.3s ease-in;
+    text-shadow: 1px 1px 3px rgba(150, 150, 150, 0.8);
 }
 
 .logo {
@@ -56,7 +74,9 @@ header > a {
 }
 
 .greengrad:hover {
-    color: rgba(66,230,149,1);
+    color: rgba(96,120,234,1);
+    text-shadow: none;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -72,12 +92,14 @@ header > a {
     position: absolute;
 }
 
-#landing {
+#landing, #contact {
     height: 100vh;
     width: 100%;
-    background-color: black;
     z-index: 3;
     opacity: 1;
+}
+
+#landing {
     display: block;
     background: url(../img/Landing.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -106,4 +128,53 @@ header > a {
     font-size: 1.2em;
     font-family: 'Rubik';
     font-weight: 300;
+}
+
+/* Contact Page */
+
+#contact {
+    background-color: #f3f4f1;
+    display: flex;
+}
+
+.side-col, .contact-section {
+    height: inherit;
+}
+
+.side-col {
+    order: 0;
+    width: 35%;
+    background: url(../img/contact.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.contact-section {
+    order: 1;
+    width: 65%;
+    padding: 20vh 0;
+}
+
+.contacts {
+    padding: 0 10%;
+}
+
+.contact-list > li {
+    padding-left: 10px;
+    
+    align-content: center;
+    padding: 2%;
+}
+
+.contact-list > li > p {
+    display: inline;
+    padding-left: 10px;
+}
+
+.contact-list > li > img {
+    height: 20px;
+    color: rgba(96,120,234,1);
+    vertical-align: middle;
 }
